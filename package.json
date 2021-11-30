@@ -5,8 +5,16 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "npm run lite watch:all",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin utah.html -d dist --htmlmin -o dist/utah.html && usemin arizona.html -d dist --htmlmin -o dist/arizona.html && usemin washington.html -d dist --htmlmin -o dist/washington.html && usemin squamish.html -d dist --htmlmin -o dist/squamish.html && usemin whistler.html -d dist -htmlmin -o dist/whistler.html && usemin oregon.html -d dist --htmlmin -o dist/oregon.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run usemin"
+    
   },
   "repository": {
     "type": "git",
@@ -19,6 +27,12 @@
   },
   "homepage": "https://github.com/krisb09/projectOne#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
