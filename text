@@ -37,3 +37,9 @@ Oregon
       <p>With all due respect to other mountains, none are as legitimately "big mountain" than Whistler. This is in the heart of British Columbia's Coast Range, and the terrain reflects the same diversity that brings millions (yes, millions) of skiers, snowboarders, snowmobilers, hikers and mountain bikers here every year. Everyone else is trying to do what Whistler does naturally: Be awesome. Most fail. Some come close. None match the elusive Whistler equation.</p>
     </div>
   
+
+    usemin
+
+    // "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin utah.html -d dist --htmlmin -o dist/utah.html && usemin arizona.html -d dist --htmlmin -o dist/arizona.html && usemin washington.html -d dist --htmlmin -o dist/washington.html && usemin squamish.html -d dist --htmlmin -o dist/squamish.html && usemin whistler.html -d dist -htmlmin -o dist/whistler.html && usemin oregon.html -d dist --htmlmin -o dist/oregon.html",
+    
+    

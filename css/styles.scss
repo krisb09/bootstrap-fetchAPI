@@ -1,9 +1,4 @@
-$color-primary: rgba(14, 13, 13, 0.294);
-
-footer {
-    background-color: rgba(28, 27, 27, 0.971);
-    display: flex;
-}
+$footer-color: red;
 
 
 body {
@@ -157,8 +152,18 @@ p.about {
       font-size: 20px;
       line-height: 24px;
     }
+    iframe {
+        padding-top: 200px
+    }
   }
   
+  @media (max-width: 575.98px) { 
+      .trip-title {
+          background-color: blue;
+      }
+
+  }
+
 
 
 
@@ -744,7 +749,7 @@ hr {
 }
 
 footer {
-  background-color: rgba(28, 27, 27, 0.971);
+  background-color: $footer-color;
   height: 200px;
   position: cover;
   padding: 0;
