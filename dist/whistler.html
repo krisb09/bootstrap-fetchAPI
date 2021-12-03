@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;300;400;600&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mountain Adventures</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a href="#" class="navbar-brand">Mountain Adventures</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <!-- <div class="mx-auto"></div> -->
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./menu.html" class="nav-link text-white">Trips</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index.html#aboutUs" class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-white">Contact</a>
+                </li>
+              </ul>
+            </div> 
+        </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <section id="banner-imageSix" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+            <div class="row justify-content-center"
+            data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1>Whistler</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Widget -->
+    <div class="container">
+        <div class="col">
+          <div id="weather">
+            <div id="description"></div>
+            <h2 id="temp"></h2>
+            <div id="location"></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container my-5 d-grid gap-5">
+        <div class="p-5 border">
+          <p>Whistler is mecca for gravity-loving mountain bikers and it has everything chairlift-junkies need, plus more. The culture of riding is as strong as it gets, and the average rider who lives here is probably better than 90 percent of the locals at most bike parks around the globe.</p>
+          
+          <p>With all due respect to other mountains, none are as legitimately "big mountain" than Whistler. This is in the heart of British Columbia's Coast Range, and the terrain reflects the same diversity that brings millions (yes, millions) of skiers, snowboarders, snowmobilers, hikers and mountain bikers here every year. Everyone else is trying to do what Whistler does naturally: Be awesome. Most fail. Some come close. None match the elusive Whistler equation.</p>
+        </div>
+            <h2>Trip Details</h2>
+    </div>
+
+    <!-- Accordion -->
+    <div class="container" id="arizona">
+        <div class="row justify-content-space-between">
+          <div class="col-md-6">
+        
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      LOCATION
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p>
+                        Whistler BC, Canada
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      DURATION
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <p>3 Days</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      RIDER LEVEL
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                     <p>Beginner - Expert</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      TERRAIN & TRAILS
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                     <ul>
+                       <li>Dry & Dusty</li>
+                       <li>Climbs</li>
+                       <li>Rock Gardens</li>
+                     </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                      PRIME SEASON
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <p>
+                        November - February
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                      PRICE
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                      <p>
+                        $950
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+          </div>
+    
+          <div class="col-md-6">
+            <iframe src="https://www.singletracks.com/wp-json/trailapi/v1/bike/trails/map/display/trail/279647/?format=html&height=400" style="height: 400px; width: 100%; border: none; overflow: hidden;" scrolling="yes"></iframe>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="js/script.js">
+
+</script>
+
+<script>
+    var nav = document.querySelector('nav');
+  
+    window.addEventListener('scroll', function() {
+      if(window.pageYOffset > 100){
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  
+    fetch("https://open-weather13.p.rapidapi.com/city/whistler", {
+          "method": "GET",
+          "headers": {
+              "x-rapidapi-host": "open-weather13.p.rapidapi.com",
+              "x-rapidapi-key": "abc125623cmshdecc765bc321b7ep165374jsn1056a8b52d10"
+          }
+      }).then(response => {
+          return response.json();
+      }).then(data => {
+          getWeather(data);
+      })
+      .catch( () => {
+          //catch any errors
+      });
+  
+      function getWeather(d) {
+          // const celcius = Math.round(parseFloat(d.main.temp)-273.15);
+          // const farenheit = Math.round((parseFloat(d.main.temp)*1.8)/32);
+          const farenheit = (d.main.temp);
+          
+  
+          document.querySelector('#description').innerHTML = d.weather[0].description;
+          document.querySelector('#temp').innerHTML = farenheit + '&deg;' + 'F';
+          document.querySelector('#location').innerHTML = d.name;
+      }
+  </script>
+    
+</body>
+
+<footer>
+    <div class="container">
+       <div class="row pt-5">
+          <div class="col-md-4 text-center">
+            <p>Mountain Adventures</p>
+            <p>700 Harris Ave, Bellingham, WA 98225</p>
+            <p>(877) 696-3845</p>  
+          </div>
+  
+        <div class="col-md-4 text-center">
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        
+        <div class="col-md-4 text-center">
+          <p>Sign up to our newsletter!</p>
+          <label for="user-name">Email:</label>
+          <input type="text" name="username" id="user-name">
+          <button>Submit</button>
+        </div>
+       
+      </div>
+      
+     </div>
+      
+   </footer>
+
+</html>
