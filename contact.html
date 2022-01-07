@@ -14,32 +14,70 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fas fa-mountain"></i> <span class="navbar-brand">Mountain Adventures</span></a>
-         
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+          <a href="./index.html"><i class="fas fa-mountain"></i></a>
+          <span class="navbar-brand">Mountain Adventures</span>
+
+          <button class="navbar-toggler" 
+              type="button"
+              data-bs-toggle="collapse" 
+              data-bs-target="#navmenu"
+              >
+              <span class="navbar-toggler-icon"></span>
+
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./menu.html">Trips</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html#aboutUs">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link  active" href="./contact.html">Contact</a>
-              </li>
-            </ul>
+
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="./index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./menu.html" class="nav-link">Trips</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./about.html" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./contact.html" class="nav-link active">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</nav>       
+</div>
+
+<section>
+<section id="contactHero" class="d-flex align-items-center justify-content-center">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-xl-6 col-lg-8">
+        
+      </div>
+    </div>
+
+
+  </div>
+</section>
+</section>
+
+<section>
+  <section id="aboutContact" class="d-flex align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-xl-6 col-lg-8">
+            
           </div>
         </div>
-      </nav>
-
+    
+    
+      </div>
+    </section>
+</section>
 
 
 
@@ -48,7 +86,7 @@
 
 
 
-    <div class="container containerForm pb-5">
+    <div class="container containerForm">
       <h1 class="trips-title pt-5 text-center">Contact Us</h1>
       <form>
         <div class="mb-3">
@@ -148,10 +186,10 @@ actionButtonSix.addEventListener('click', () => {
         </div>
 
       <div class="col-md-4 text-center">
-        <i class="fab fa-youtube-square"></i>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram"></i>
+        <a href="youtube.com"><i class="fab fa-youtube-square"></i></a>
+        <a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="twitter.com"><i class="fab fa-twitter-square"></i></a>
+        <a href="instagram.com"><i class="fab fa-instagram"></i></a>
       </div>
       
       <div class="col-md-4 text-center">
@@ -159,6 +197,9 @@ actionButtonSix.addEventListener('click', () => {
         <label for="user-name">Email:</label>
         <input type="text" name="username" id="user-name">
         <button>Submit</button>
+        <br>
+        <br>
+        <p>&copymaverick09</p>
       </div>
      
     </div>

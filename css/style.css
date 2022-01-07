@@ -9,6 +9,9 @@ body {
 
 * {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 p {
@@ -89,6 +92,129 @@ p.about {
       line-height: 36px;
     }
     #hero h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  @media (max-width: 768px) {
+      .flip-card {
+        display: flex;
+        
+      }
+  }
+
+  /* ABOUT PAGE */
+
+  #aboutHero {
+    width: 100%;
+    height: 100vh;
+    background: url('/assets/gallery/mtbadventure.png')top center;
+    background-size: cover;
+    position: relative;
+  }
+  #aboutHero:before {
+    content: "";
+    background: rgba(13, 13, 13, 0.238);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #aboutHero .container {
+    position: relative;
+    padding-top: 250px;
+    text-align: center;
+  }
+  #aboutHero h1 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 25px;
+  }
+  #aboutHero h1 span {
+    color: #ffc451;
+  }
+  
+  @media (min-width: 1024px) {
+    #aboutHero {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 768px) {
+    #aboutHero {
+      height: auto;
+    }
+    #aboutHero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #aboutHero h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  @media (max-width: 768px) {
+      .flip-card {
+        display: flex;
+        
+      }
+  }
+
+
+  /* CONTACT PAGE */
+
+  #contactHero {
+    width: 100%;
+    height: 60vh;
+    background: url('/assets/gallery/mtbcontact.png')top center;
+    background-size: cover;
+    position: relative;
+  }
+  #contactHero:before {
+    content: "";
+    background: rgba(13, 13, 13, 0.238);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #contactHero .container {
+    position: relative;
+    padding-top: 250px;
+    text-align: center;
+  }
+  #contactHero h1 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 25px;
+  }
+  #contactHero h1 span {
+    color: #ffc451;
+  }
+  
+  @media (min-width: 1024px) {
+    #contactHero {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 768px) {
+    #contactHero {
+      height: auto;
+    }
+    #contactHero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #contactHero h2 {
       font-size: 20px;
       line-height: 24px;
     }
@@ -518,20 +644,6 @@ p.about {
   }
 }
 
-/* #banner-imageMenu {
-  background-image: url('/assets/gallery/menu.png');
-  background-size: cover;
-  height: 80vh;
-} */
-
-/* #banner-contact {
-  background-image: url('/assets/gallery/yosemite.png')top center;
-  background-size: cover;
-  position: relative;
-  height: 80vh;
-  width: 100%;
-  height: 100vh;
-} */
 
 #banner-contact:before {
   content: "";
@@ -547,8 +659,13 @@ p.about {
 
 .accordion {
   width: 500px;
-  
+   
 }
+
+.tripDetails {
+  padding-bottom: 100px;
+}
+
 
 
 .navbar-brand {
@@ -577,23 +694,10 @@ li  a {
   font-family: 'Nothing You Could Do', cursive;
 }
 
-/* .jumbotron {
-    background-image: url('../assets/gallery/backdrop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
-    max-width: 100%;
-} */
-
-/* CARDS */
-
-/*
-flip card
-*/
 .card-flip > div {
     backface-visibility: hidden;
-    transition: transform 300ms;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
     transition-timing-function: linear;
     width: 100%;
     height: 100%;
@@ -603,28 +707,34 @@ flip card
   
   .card-front {
     transform: rotateY(0deg);
+    transform-style: preserve-3d;
   }
   
   .card-back {
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
+    transform-style: preserve-3d;
   }
   
   .card-flip:hover .card-front {
     transform: rotateY(-180deg);
+    transform-style: preserve-3d;
   }
     
   .card-flip:hover .card-back {
     transform: rotateY(0deg);
+    transform-style: preserve-3d;
   }
 
   .card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transform-style: preserve-3d;
   }
   .card {
       border-radius: 10px;
+      transform-style: preserve-3d;
       
   }
 
@@ -652,6 +762,9 @@ flip card
     background-color: tomato;
   }
 
+  .img-cards {
+    padding-bottom: 150px;
+  }
 
   
 /* //////end of CARDS */
@@ -835,14 +948,21 @@ button, input {
   padding-top: 25px;
 }
 
-#arizona, #whistler {
+#aboutUs {
+  padding-top: 150px;
   padding-bottom: 200px;
 }
 
 .containerForm {
   max-width: 440px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .contactLabel {
   color: black;
 }
+
+/* footer {
+  padding-top: 150px;
+} */

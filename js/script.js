@@ -1,67 +1,4 @@
 
-//   fetch("https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"accept": "application/json",
-// 		"x-rapidapi-host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com",
-// 		"x-rapidapi-key": "abc125623cmshdecc765bc321b7ep165374jsn1056a8b52d10"
-// 	}
-// })
-
-// function fetchData() {
-//   fetch("https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/search?query=car", {
-//     "method": "GET",
-//     "headers": {
-//       "accept": "application/json",
-//       "x-rapidapi-host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com",
-//       "x-rapidapi-key": "abc125623cmshdecc765bc321b7ep165374jsn1056a8b52d10"
-// 	}
-// }).then(response => {
-//    return response.json()
-// }).then(jokes => {
-//     //console.log(jokes.result);
-//     const comedy = jokes.result.map(jokeline => {
-//       return `
-//       <p class="joke">${jokeline.value}</p>
-//       `
-//     })
-//     document.querySelector("#app").insertAdjacentHTML('afterbegin', comedy)
-// })
-
-// }
-
-// fetchData();
-
-// function trial() {
-//   newData = [
-//     {
-//     userId: "john",
-//     id: 1,
-//     title: "asdfasdf",
-//   },
-//   {
-//     userId:"mike",
-//     id: 2,
-//     title: "dgddgf"
-//   },
-//   {
-//     userId:"jay",
-//     id: 3,
-//     title: "dgddgf"
-//   },
-//   {
-//     userId:"bob",
-//     id: 4,
-//     title: "dgddgf"
-//   }
-  
-//   ]
-  
-//   newUser.forEach(user => {
-//     console.log(post);
-//   })
-// }
-// trial();
 
 const nav = document.querySelector('nav');
       
@@ -122,11 +59,7 @@ let actionButtonFive = document.querySelector("#button-5");
 actionButtonFive.addEventListener('click', () => {
   window.open("./squamish.html", "_blank").focus();
 });
-// let actionButtonFour = document.querySelector("#button-4");
 
-// actionButtonFour.addEventListener('click', () => { ()
-//   window.open("./squamish.html", "_blank").focus();
-// });
 
 fetch("https://open-weather13.p.rapidapi.com/city/bellingham", {
   "method": "GET",
